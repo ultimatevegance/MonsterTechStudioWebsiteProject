@@ -5,20 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>MonsterTechStudio</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:100,600" rel="stylesheet" type="text/css">
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-color: #0F57EC;
                 color: #636b6f;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Exo 2';
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
+                background-image: url("images/bg.png");
             }
 
             .full-height {
@@ -47,16 +47,18 @@
 
             .title {
                 font-size: 84px;
+                color: #29f2cb ;
             }
 
             .links > a {
-                color: #636b6f;
+                color: white;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+
             }
 
             .m-b-md {
@@ -64,8 +66,9 @@
             }
         </style>
     </head>
-    <body>
+    <body >
         <div class="flex-center position-ref full-height">
+
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
@@ -79,17 +82,19 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Welcome to MonsterTech Studio
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://laravel.com/docs"></a>
+                    <a href="https://laracasts.com">HomePage</a>
+                    <a href="https://laravel-news.com">Blogs</a>
+                    <a href="https://forge.laravel.com">Projects</a>
+                    <a href="https://github.com/laravel/laravel">About</a>
                 </div>
+
             </div>
+            
         </div>
     </body>
 </html>
